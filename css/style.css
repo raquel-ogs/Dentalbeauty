@@ -1,0 +1,1532 @@
+*{
+    font-family: 'Raleway';
+    font-weight: 400;
+    margin: 0;
+    justify-content: center;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar{
+    width: 3px;
+    height: 3px;
+}
+
+body::-webkit-scrollbar-track{
+    background: rgba(50,194,185, 0.25);
+    padding: 2px;
+}
+
+body::-webkit-scrollbar-thumb{
+    background:#00686C;
+    border-radius: 5em;
+}
+
+
+nav{
+    width: 100%;
+    height: 7rem;
+    background-color: white;
+    box-shadow: 0px 0px 15px rgba(0,0,0, 0.3);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed; 
+}
+
+nav #logo{
+    width: 10%;
+}
+
+nav #logo img{
+    width: 250px;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+nav ul li{
+ padding: 2em;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #6A6A6A;
+    font-size: 105%;
+}
+
+nav ul li a:hover{
+    color: #00686C;
+}
+
+nav ul li a:active{
+    color: #6A6A6A;
+}
+
+nav #menu{
+    color: #00686C;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.home .container{
+    height: 10em;
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15em;
+    margin: 0 auto;
+}
+
+.home div .text{
+    width: 85vh;
+    height: 27em;
+}
+
+.home div .image{
+    height: 8em;
+}
+
+.home div .image img{
+    width: 500px;
+}
+
+.home div .text h3{
+    width: 90%;
+    font-weight: 700;
+    font-size: 302%;
+    padding-top: 0.7em;
+    text-transform: capitalize;
+
+}
+
+.home div .text h5{
+    width: 80%;
+    font-family: 'Poppins';
+    font-weight: 300;
+    font-size: 120%;
+    color: #959595;
+    padding-top: 1em;
+    text-align: start;
+}
+
+.home div .text span{
+    padding-top: 1.5em;
+    display: grid;
+    grid-template-columns: 220px 220px;
+    float: left;
+    
+}
+
+.home div .text span button{
+    cursor: pointer;
+    width: 10.5em;
+    height: 3em;
+    border-radius: 0.5em;
+    font-size: 120%;
+    letter-spacing: 0.05em;
+    transition: 0.7s;
+}
+
+.home div span .background {
+    background-color: #00686C;
+    border-color: transparent;
+    color: white;
+}
+
+.home div span .background:hover{
+    background-color: transparent;
+    border: 2px solid #00686C;
+    color: #00686C;
+}
+
+.home div span .stroke{
+    background-color: transparent;
+    border: 2px solid #00686C;
+    color: #00686C;
+}
+
+.home div span .stroke:hover{
+    background-color: #00686C;
+    border-color: transparent;
+    color: white;
+}
+
+.patients{
+    background-color: #F0F0F0;
+    width: 100%;
+    height: 45em;
+    margin-top: 28rem;
+    text-align: center;
+    
+}
+
+.patients div{
+    width: 100%;
+    padding-top: 3rem;
+}
+
+.patients div ul{
+    list-style: none;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 380px ;
+    overflow-x: scroll;
+    overflow-y: hidden; 
+    padding-top: 3em; 
+    padding-bottom: 2em;
+    padding-left: 15em;
+}
+
+.patients div ul::-webkit-scrollbar{
+    background: rgba(50,194,185, 0.15);
+    height: 5px;
+    border-radius: 100%;
+    margin-top: 10px;
+}
+
+.patients div ul::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .patients div ul::-webkit-scrollbar-thumb {
+    width: 2px;
+    background-color: rgba(0,0,0, 0.1);
+    border-radius: 10em;
+  }
+
+.patients div ul li{
+    width: 21em;
+    height: 25em;
+    border: 4px solid #32C2B9;
+    border-radius: 0.8em;
+    margin-top: 2em;
+    margin-left: 3em;
+    align-items: center;
+    justify-content: center;
+}
+
+.patients div ul li div{
+    width: 100%;
+    height: 87%;
+    margin-left: 0.7em;
+    margin-top: 0.8em;
+    border-radius: 0.8em;
+    text-align: center;
+    background-color: rgba(50,194,185, 0.15);
+}
+
+.patients div ul li div img{
+    width: 110px;
+    border: 4px solid #32C2B9;
+    border-radius: 10em;
+    
+}
+
+.patients div ul li div h3{
+    font-weight: 700;
+    font-size: 165%;
+    color: #00686C;
+    margin-top: 0.5em;
+}
+
+.patients div ul li div h5{
+    width: 76%;
+    font-family: Poppins;
+    font-weight: 300;
+    font-size: 98%;
+    margin-top: 1em;
+    margin-left: 2em;
+    color: #1E1E1E;
+}
+
+.about{
+    width: 100%;
+    margin-top: 5em;
+}
+
+.about .container{
+    width: 80%;
+    height: 42em;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about .container img{
+    width: 680px;
+}
+
+.about .container .text{
+    width: 40%;
+}
+
+.about .container .text h2{
+    font-size: 226%;
+    width: 85%;
+}
+
+.about .container .text h5{
+    width: 75%;
+    font-family: 'Poppins';
+    font-weight: 300;
+    font-size: 105%;
+    margin-top: 1em;
+    color: #676767;
+    text-align: justify;
+}
+
+.numbers{
+    width: 100%;
+    margin-top: 5em;
+}
+
+.numbers .container{
+    width: 100%;
+    height: 7em;
+    display: flex;
+    justify-content: space-between;
+    background-color: #32C2B9;
+}
+
+.numbers .container .card{
+    width: 25%;
+    text-align: center;
+    display:grid;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.numbers .container .card span h1{
+    font-weight: 600;
+    font-size: 200%;
+    color: white;
+}
+
+.numbers .container .card span h3{
+    color: white;
+    font-weight: 200;
+    font-size: 100%;
+    padding-top: 0.8em;
+    text-transform: capitalize;
+}
+
+.services{
+    width: 100%;
+}
+
+.services .container{
+    width: 75%;
+    text-align: center;
+    margin-top: 5em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.services .container h3{
+    font-family: 'Poppins';
+    font-size: 24px;
+    padding-top: 3em;
+    margin: 0 auto;
+    color: #00686C;
+}
+
+.services .container ul{
+    margin: 0 auto;
+    display: grid;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(360px,1fr));
+}
+
+.services .container ul li{
+    background-color: rgba(50,194,185, 0.15);
+    border-radius: 1em;
+    width: 20em;
+    height: 15em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3em;
+}
+
+.services .container ul li div{
+    width: 100%;
+    height: 100%;
+    border: 3px solid #32C2B9;
+    border-radius: 1em;
+    margin: 0.4em;
+    text-align: center;
+}
+
+.services .container ul li div img{
+    padding-top: 1em;
+}
+
+.services .container ul li div h1{
+    width: 75%;
+    color: #32C2B9;
+    font-size: 135%;
+    letter-spacing: 0.05em;
+    margin: 0 auto;
+    padding-top: 0.5em;
+}
+
+
+.plans{
+    background-color: #F0F0F0;
+    width: 100%;
+    height: 58em;
+    margin-top: 5rem;    
+}
+
+.plans .container  {
+    width: 100%;
+    padding-top: 3rem;
+}
+
+.plans .container h1{
+    text-align: center;
+}
+
+.plans .container  h2{
+    text-align: center;
+}
+
+
+.plans .container ul{
+    list-style: none;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 450px ;
+    overflow-x: scroll;
+    overflow-y: hidden; 
+    padding-top: 3em; 
+    padding-bottom: 2em;
+    padding-left: 10em;
+}
+
+.plans .container   ul::-webkit-scrollbar{
+    background: rgba(50,194,185, 0.15);
+    height: 5px;
+    border-radius: 100%;
+    margin-top: 10px;
+}
+
+.plans .container  ul::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .plans .container   ul::-webkit-scrollbar-thumb {
+    width: 2px;
+    background-color: rgba(0,0,0, 0.1);
+    border-radius: 10em;
+  }
+
+.plans .container  ul li{
+    width: 23em;
+    height: 38em;
+    border-radius: 0.8em;
+    margin-top: 2em;
+    align-items: center;
+    justify-content: center;
+    padding-left: 2.5em;
+    box-shadow: 0px 0px 15px rgba(0,0,0, 0.25);
+    padding-top: 3em;
+}
+
+
+.plans .container ul .plan{
+    background: white;
+    color: black;
+}
+
+.plans .container ul .plan .content h6{
+    color: #9B9B9B;
+}
+
+.plans .container ul .plan .content .list .list-item h6{
+    color: black;
+}
+
+
+.plans .container ul .family-plan{
+    background: #00494C;
+    color: white;
+}
+
+.plans .container ul .family-plan .content h6{
+    color: #B8B8B8;
+}
+
+.plans .container ul .family-plan .content .list .list-item h6{
+    color: white;
+}
+
+
+.plans .container ul li .content h3{
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.plans .container ul li .content label {
+    width: 55%;
+    height: 1em;
+    border-radius: 15px;
+    background: #32C2B9;
+    margin-top: 2.5em;
+    display: flex;
+    float: left;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.plans .container ul li .content label h4{
+    padding-bottom: 1em;
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.plans .container ul li .content label h5{
+    padding-bottom: 1.2em;
+    padding-left: 0.5em;
+    font-family: 'Poppins';
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.plans .container ul li .content h6{
+    width: 90%;
+    margin-top: 1em;
+    font-family: 'Poppins';
+    font-weight: 300;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.plans .container ul li .content .list {
+    margin-top: 6em;
+    width: 90%;
+    border-top: 2px solid rgba(0,0,0, 0.15);
+    display: flex;
+    flex-direction: column;
+    padding-top: 1em;
+}
+
+.plans .container ul li .content .list .list-item{
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: 3em;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.plans .container ul li .content .list .list-item i{
+    font-size: 24px;
+}
+
+.plans .container ul li .content .list .list-item h6{
+    width: 100%;
+    margin-top: 0;
+    margin-left: 2em;
+    font-family: 'Raleway';
+    font-size: 14px;
+    text-align: start;
+}
+
+.plans .container ul li .content div{
+    width: 90%;
+    padding-top: 2em;
+    display: flex;
+}
+
+.plans .container ul li .content div button{
+    cursor: pointer;
+    width: 85%;
+    height: 3em;
+    border-radius: 0.5em;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    transition: 0.7s;
+}
+
+.plans .container ul li .content  div .background {
+    background-color: white;
+    border: 2px solid white;
+    color: #00494C;
+}
+
+.plans .container ul li .content div .background:hover{
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
+.plans .container ul li .content div .stroke{
+    background-color: transparent;
+    border: 2px solid #00686C;
+    color: #00686C;
+}
+
+.plans .container ul li .content  div .stroke:hover{
+    background-color: #00686C;
+    border-color: transparent;
+    color: white;
+}
+
+.contact{
+    margin-top: 5em;
+}
+
+.contact .container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.contact .container h1{
+    text-align: center;
+}
+
+.contact .container h2{
+    text-align: center;
+}
+
+.contact .container form{
+    width: 100%;
+    align-items: center;
+}
+
+.contact .container form div {
+    width: auto;
+    padding-top: 1.5em;
+}
+
+.contact .container form div label{
+    font-size: 15px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #00686C;
+}
+
+.contact .container form div input{
+    margin-top: 1em;
+    font-size: 15px;
+    font-family: 'Poppins';
+    padding-left: 1em;
+    border: 3px solid #32C2B9;
+    border-radius: 0.8em;
+}
+
+.contact .container form .row {
+    width: 100%;
+    float: left;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact .container form .row .input-left{
+    width: 45%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact .container form .row .input-left input{
+    width: 100%;
+    height: 40px;
+}
+
+.contact .container form .row .input-right{
+    width: 45%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact .container form .row .input-right input{
+    width: 100%;
+    height: 40px;
+}
+
+
+.contact .container form .row .input-small{
+    width: 100%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact .container form .row .input-small input{
+    width: 100%;
+    height: 40px;
+}
+
+.contact .container form .row .input-large{
+    width: 100%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact .container form .row .input-large input{
+    width: 100%;
+    height: 180px;
+}
+
+.contact .container form .button{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.contact .container form .button button{
+    background: #32C2B9;
+    float: left;
+    border: none;
+    border-radius: 0.5em;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    width: 192px;
+    height: 52px;
+}
+
+
+.teeth img{
+    width: 100%;
+    padding-top: 7em;
+}
+
+footer{
+    width: 100%;
+    height: 30em;
+    background-color: #00686C;
+    margin-top: -1.8mm;
+}
+
+footer h4{
+    font-family: Poppins;
+    font-weight: 500;
+    padding-top: 1em;
+}
+
+footer h5{
+    font-family: Poppins;
+    padding-top: 1em;
+    width: 75%;
+}
+
+footer .container{
+    width: 100%;
+    padding-top: 5em;
+    color: white;
+}
+
+footer .container ul{
+    width: 90%;
+    display: flex;
+    margin:  0 auto;
+    list-style: none;
+    justify-content: space-around;
+}
+
+footer .container ul li form{
+    width: 100%;
+    padding-top: 1em;
+    display: flex;
+    align-items: center;
+}
+
+footer .container ul li form input {
+    width: 100%;
+    height: 43px;
+    border-radius: 5em;
+    border: none;
+    font-family: Poppins;
+    padding-left: 1.5em;
+}
+
+footer .container ul li form button {
+    margin-left: -3.5em;
+    width: 38px;
+    height: 38px;
+    border-radius: 5em;
+    background-color: #32C2B9;
+    border: none;
+}
+
+footer .container ul li form button .material-symbols-outlined {
+    margin: 0 auto;
+    color: white;
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 300,
+    'GRAD' 0,
+    'opsz' 20
+    }
+
+footer .container .copyright{
+    width: 100%;
+    height: 6em;
+    margin-top: 7em;
+    background-color: #00494C;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer .container .copyright img{
+    width: 18em;
+}
+
+footer .container .copyright h4{
+    font-size: 115%;
+    font-weight: 400;
+}
+
+h1{
+    font-weight: 800;
+    font-size: 130%;
+    color: #00686C;
+    text-transform: uppercase;
+}
+
+h2{
+    font-weight: 700;
+    font-size: 202%;
+    padding-top: 0.5em;
+    text-transform: capitalize;
+    
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+a:hover{
+    color: #32C2B9;
+    cursor: pointer;
+}
+
+/*  Responsive  */
+
+@media (max-width: 1621px){
+    .patients div ul{
+        padding-left: 25em;
+    }
+}
+
+@media (max-width: 1522px){
+    .home .container{
+        height: 10em;
+        width: 85%;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 15em;
+        margin: 0 auto;
+    }
+    
+    .home div .text{
+        width: 85vh;
+        height: 27em;
+    }
+    
+    .home div .image{
+        height: 8em;
+    }
+    
+    .home div .image img{
+        width: 450px;
+    }
+    
+    .home div .text h3{
+        width: 90%;
+        font-size: 240%;
+        text-align: justify;
+    
+    }
+    
+    .home div .text h5{
+        width: 80%;
+        font-size: 108%;
+        text-align: justify;
+    }
+
+    .about{
+        width: 100%;
+        margin-top: 3em;
+    }
+    
+    .about .container{
+        width: 80%;
+        height: 35em;
+    }
+    
+    .about .container img{
+        width: 500px;
+    }
+    
+    .about .container .text{
+        width: 45%;
+    }
+    
+    .about .container .text h2{
+        font-size: 200%;
+        width: 85%;
+        text-align: justify;
+    }
+    
+    .about .container .text h5{
+        width: 80%;
+        font-size: 90%;
+    }
+
+    h1{
+        font-size: 125%;
+    }
+    
+
+}
+
+@media (max-width: 1457px){
+    .patients div ul{
+        padding-left: 35em;
+    }
+}
+
+@media (max-width: 1306px){
+    .patients div ul{
+        padding-left: 50em;
+    }
+}
+
+@media (max-width:1212px){
+    .about .container{
+        width: 85%;
+        height: 35em;
+    }
+    
+    .about .container img{
+        width: 450px;
+    }
+    
+    .about .container .text{
+        width: 45%;
+    }
+    
+    .about .container .text h2{
+        font-size: 190%;
+        width: 90%;
+        text-align: justify;
+    }
+    
+    .about .container .text h5{
+        width: 80%;
+        font-size: 90%;
+    }
+
+    h1{
+        font-size: 125%;
+    }
+    
+}
+
+@media (max-width:1048px){
+    nav{
+        width: 100%;
+        height: 7rem;
+        background-color: white;
+        box-shadow: 0px 0px 15px rgba(0,0,0, 0.3);
+        display: flex;
+        align-items: center;
+    }
+
+    nav #logo{
+        width: 60%;
+    }
+    
+    nav #logo img{
+        width: 225px;
+    }
+    
+    nav ul{
+        width: 100%;
+        height: 100vh;
+        float: right;
+        flex-direction: column;
+        list-style: none;
+        text-align: center;
+        position: fixed;
+        background: #00686C;
+        right: -200%;
+        top: 113px;
+        transition: all .5s;
+    }
+
+    nav ul.slow{
+        right: 0;
+    }
+    
+    nav ul li{
+        color: white;
+        margin: 10px 0;
+        padding-top: 2em;
+        display: block;
+    }
+
+    nav ul li a{
+        text-decoration: none;
+        color: white;
+        font-size: 125%;
+    }
+    
+    nav ul li a:hover{
+        color: #32C2B9;
+    }
+    
+    nav ul li a:active{
+        color: white;
+    }
+    
+    nav #menu{
+        display: block;
+    }
+
+    .home .container{
+        height: 35em;
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 13em;
+        margin: 0 auto;
+    }
+    
+    .home div .text{
+        width: 75%;
+    }
+    
+    .home div .text h3{
+        width: 95%;
+        font-size: 200%;    
+    }
+    
+    .home div .text h5{
+        width: 85%;
+        font-size: 100%;
+    }
+
+    .home div .text span{
+        grid-template-columns: 180px 180px;
+        float: left;
+    }
+    
+    .home div .text span button{
+        width: 9em;
+        height: 3em;
+        font-size: 110%;
+    }
+
+    .home div .image{
+        padding-top: 5em;
+    }
+
+
+    h1{
+        font-weight: 800;
+        font-size: 115%;
+        color: #00686C;
+        text-transform: uppercase;
+    }
+    
+    .patients{
+        background-color: #F0F0F0;
+        width: 100%;
+        height: 45em;
+        margin-top: 28rem;
+        text-align: center;
+        
+    }
+    
+    .patients div{
+        width: 100%;
+        padding-top: 3rem;
+    }
+    
+    .patients div ul{
+        grid-auto-columns: 340px;
+        padding-left: 50em;
+    }
+    
+    .patients div ul::-webkit-scrollbar{
+        background: rgba(50,194,185, 0.15);
+        height: 5px;
+        border-radius: 100%;
+        margin-top: 10px;
+    }
+    
+    .patients div ul::-webkit-scrollbar-track {
+        background: transparent;
+      }
+    
+      .patients div ul::-webkit-scrollbar-thumb {
+        width: 2px;
+        background-color: #32C2B9;
+        border-radius: 10em;
+      }
+    
+    .patients div ul li{
+        width: 19em;
+        height: 23em;
+        border: 4px solid #32C2B9;
+        border-radius: 0.8em;
+        margin-top: 2em;
+        margin-left: 3em;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .patients div ul li div{
+        width: 102%;
+        height: 88%;
+        margin-left: 0.5em;
+        margin-top: 0.5em;
+        border-radius: 0.8em;
+        text-align: center;
+        background-color: rgba(50,194,185, 0.15);
+    }
+    
+    .patients div ul li div img{
+        width: 100px;
+        border: 4px solid #32C2B9;
+        border-radius: 10em;
+
+    }
+    
+    .patients div ul li div h3{
+        font-weight: 700;
+        font-size: 135%;
+        color: #00686C;
+        margin-top: 0.5em;
+    }
+    
+    .patients div ul li div h5{
+        width: 80%;
+        font-family: Poppins;
+        font-weight: 300;
+        font-size: 90%;
+        margin-top: 1em;
+        color: #1E1E1E;
+    }
+
+    .about{
+        width: 100%;
+        margin-top: 5em;
+    }
+    
+    .about .container{
+        width: 80%;
+        height: 29em;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .about .container img{
+        width: 400px;
+    }
+    
+    .about .container .text{
+        width: 40%;
+    }
+    
+    .about .container .text h2{
+        font-size: 180%;
+        width: 100%;
+    }
+    
+    .about .container .text h5{
+        width: 100%;
+        font-family: Poppins;
+        font-weight: 300;
+        font-size: 80%;
+        margin-top: 1em;
+        color: #676767;
+        text-align: justify;
+    }
+    
+}
+
+
+@media (max-width: 988px ) {
+    .services .container{
+        width: 100%;
+    }
+    
+    .services .container h3{
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 900px){
+    .about{
+        width: 100%;
+        margin-top: 5em;
+    }
+    
+    .about .container{
+        width: 80%;
+        height: 29em;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .about .container img{
+        width: 320px;
+    }
+    
+    .about .container .text{
+        width: 40%;
+    }
+    
+    .about .container .text h2{
+        font-size: 23px;
+        width: 100%;
+    }
+    
+    .about .container .text h5{
+        width: 95%;
+        font-family: Poppins;
+        font-weight: 300;
+        font-size: 12px;
+        margin-top: 1em;
+    }
+
+    footer{
+        width: 100%;
+        height: 76em;
+        background-color: #00686C;
+        margin-top: -1.8mm;
+    }
+    
+    footer h4{
+        font-size: 120%;
+        padding-top: 2.5em;
+    }
+    
+    footer h5{
+        font-size: 100%;
+
+    }
+
+    footer .container{
+        width: 100%;
+        padding-top: 2em;
+    }
+    
+    footer .container ul{
+        width: 75%;
+        margin: 0 auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .container ul label{
+        width: 75%;
+    }
+
+    footer .container ul li{
+        width: 75%;
+    }
+    
+    footer .container ul li form{
+        width: 100%;
+        padding-top: 1em;
+        display: flex;
+        align-items: center;
+    }
+    
+    footer .container ul li form input {
+        width: 100%;
+        height: 43px;
+        border-radius: 5em;
+        border: none;
+        font-family: Poppins;
+        padding-left: 1.5em;
+    }
+    
+    footer .container ul li form button {
+        margin-left: -3.5em;
+        width: 38px;
+        height: 38px;
+        border-radius: 5em;
+        background-color: #32C2B9;
+        border: none;
+    }
+    
+    footer .container ul li form button .material-symbols-outlined {
+        margin: 0 auto;
+        color: white;
+        font-variation-settings:
+        'FILL' 1,
+        'wght' 300,
+        'GRAD' 0,
+        'opsz' 20
+        }
+    
+    footer .container .copyright{
+        width: 100%;
+        height: 6em;
+        background-color: rgba(0,0,0, 0.3);
+        display: flex;
+        align-items: center;
+        padding-left:  1em;
+    }
+    
+    footer .container .copyright img{
+        width: 10em;
+    }
+    
+    footer .container .copyright h4{
+        font-size: 90%;
+        font-weight: 400;
+    }
+
+    h1{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 858px ) {
+    .patients{
+        background-color: #F0F0F0;
+        width: 100%;
+        height: 40em;
+        margin-top: 28rem;
+        text-align: center;
+        
+    }
+    
+    .patients div{
+        width: 100%;
+        padding-top: 3rem;
+    }
+    
+    .patients div ul{
+        grid-auto-columns: 300px;
+    }
+
+      .patients div ul::-webkit-scrollbar-thumb {
+        width: 2px;
+        background-color: #32C2B9;
+        border-radius: 10em;
+      }
+    
+    .patients div ul li{
+        width: 16em;
+        height: 20em;
+        border: 4px solid #32C2B9;
+        border-radius: 0.8em;
+        margin-top: 2em;
+        margin-left: auto;
+    }
+    
+    .patients div ul li div{
+        width: 102%;
+        height: 88%;
+        margin-left: 0.5em;
+        border-radius: 0.8em;
+        text-align: center;
+        background-color: rgba(50,194,185, 0.15);
+    }
+    
+    .patients div ul li div img{
+        width: 80px;
+        border: 3px solid #32C2B9;
+        border-radius: 10em;
+    }
+    
+    .patients div ul li div h3{
+        font-weight: 700;
+        font-size: 115%;
+        color: #00686C;
+    }
+    
+    .patients div ul li div h5{
+        width: 80%;
+        font-size: 80%;
+    }
+
+}
+
+@media (max-width:772px){
+    .home .container{
+        height: 20em;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 13em;
+        margin: 0 auto;
+    }
+    
+    .home div .text{
+        width: 75%;
+        height: 20em;
+    }
+    
+    .home div .text h3{
+        width: 95%;
+        font-size: 185%;    
+    }
+    
+    .home div .text h5{
+        width: 85%;
+        font-size: 100%;
+    }
+
+    .home div .text span{
+        grid-template-columns: 180px 180px;
+        float: left;
+    }
+
+    .home div .image img{
+        width: 320px;
+    }
+
+    .about{
+        width: 100%;
+        margin-top: 5em;
+    }
+    
+    .about .container{
+        width: 80%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    
+    .about .container img{
+        width: 350px;
+        margin-top: 2em;
+    }
+    
+    .about .container .text{
+        width: 85%;
+    }
+    
+    .about .container .text h2{
+        font-size: 28px;
+        width: 95%;
+        margin-top: 0.5em;
+    }
+    
+    .about .container .text h5{
+        width: 85%;
+        font-family: Poppins;
+        font-weight: 300;
+        font-size: 14px;
+        margin-top: 1em;
+    }
+
+    h1{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 624px ) {
+    .services .container{
+        width: 100%;
+    }
+    
+    .services .container h3{
+        font-size: 15px;
+    }
+}
+
+@media (max-width:512px){
+    .home .container{
+        height: 19em;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 13em;
+        margin: 0 auto;
+    }
+    
+    .home div .text{
+        width: 80%;
+        height: 17.5em;
+    }
+    
+    .home div .text h3{
+        width: 95%;
+        font-size: 26px;
+    }
+    
+    .home div .text h5{
+        width: 85%;
+        font-size: 13px;
+    }
+
+    .home div .text span{
+        grid-template-columns: 180px 180px;
+        float: left;
+    }
+
+    .home div .image img{
+        width: 290px;
+    }
+
+
+    .home div .text span{
+        grid-template-columns: 150px 150px;
+        float: left;
+    }
+    
+    .home div .text span button{
+        width: 8em;
+        height: 3em;
+        border-radius: 0.5em;
+        font-size: 17px;
+    }
+
+    .services .container h3{
+        font-size: 14px;
+    }
+
+    h1{
+        font-weight: 800;
+        font-size: 105%;
+        color: #00686C;
+        text-transform: uppercase;
+    }
+}

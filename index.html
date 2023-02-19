@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Raquel Oliveira"/>
+    <meta name="description" content="Trabalho acadêmico de uma Cliníca Odontológica desenvolvido por Raquel Oliveira"/>
+    <meta name="keywords" content="HTML5, CSS3, Javascript, Jquery, Dentista, Dentalbeauty, Cliníca Odontológica, "/>
+    <link rel="sortcut icon" href="img/svg/imagotipo.svg" type="image/x-icon"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title> Dentalbeauty, onde nasce o sorriso dos sonhos!</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <label id="logo">
+                <a href="#home">
+                    <img src="img/svg/logotipo.svg"/>
+                </a>
+            </label>
+            <ul>
+                <li class="nav-link">
+                    <a href="#patients">
+                        Pacientes 
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="#about">
+                        Sobre nós
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="#services">
+                        Serviços
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="#plans">
+                        Planos
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="#contact">
+                        Contato
+                    </a>
+                </li>
+            </ul>
+            <label id='menu'>
+                <li class="fas fa-bars"></li>
+            </label>
+        </nav>
+    </header>
+    <script src="https://kit.fontawesome.com/2780876011.js" crossorigin="anonymous"></script>   
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <script src="js/script.js"></script>
+    <section class="home" id="home">
+        <div class="container">
+            <span class="text">
+                <h1 style="color: #32C2B9;"> ONDE NASCE O SORRISO DOS SONHOS </h1>
+                <h3> A melhor Clínica <font style="color: #00686C; font-weight: 700;"> Odontológica </font> da capital, 
+                atuamos há 20 anos em <font style="color: #00686C; font-weight: 700;"> São Paulo </font> </h3>
+                <h5> Oferecemos diversos tipos de tratamentos dentários, veja os que mais se encaixam com você ou agende uma consulta 
+                    em nossa clínica.</h5>
+                <span>
+                    <button class="background" onclick="targetOffset = $('#services').offset().top;$('html, body').animate({scrollTop: targetOffset - 100}, 500);">
+                        Serviços  
+                   </button>                    
+                   <button class="stroke" onclick="targetOffset = $('#contact').offset().top;$('html, body').animate({scrollTop: targetOffset - 100}, 500);">
+                         Contato  
+                    </button>
+                </span>
+            </span>
+            <span class="image">
+                <img src="img/svg/atendimento.svg"/>
+            </span>
+        </div>
+    </section>
+    <section class="patients" id="patients">
+        <div class="container">
+            <h1> PACIENTES </h1>
+            <h2> Avaliações de clientes </h2>
+            <ul>
+                <li>
+                    <div>
+                        <img src="img/paciente_1.png">
+                        <h3> Alexandre Silvano</h3>
+                        <h5> “Tive o melhor tratamento dentário de minha vida, depois de anos sentindo 
+                            vergonha ao sorrir, eu finalmente posso rir sem medo.” </h5>
+                        </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="img/paciente_2.png" >
+                        <h3> Felícia Antonio </h3>
+                        <h5> “Depois de passar por clínicas ruins, eu finalmente consegui o sorriso dos sonhos na 
+                            Dentalbeauty, com certeza a melhor clínica da capital.” </h5>
+                        </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="img/paciente_3.png">
+                        <h3> Giovanna Santos </h3>
+                        <h5> “Coloquei lentes de contato dental na Dentalbeauty faz 1 ano, e posso dizer que 
+                            realizei o sonho de finalmente ter o sorriso perfeito. ”</h5>
+                        </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="img/paciente_4.png">
+                        <h3> Diana Serra </h3>
+                        <h5> “Estou apaixonada por meu sorriso, após colocar as facetas de porcelana da 
+                            Dentalbeauty, já recomendei a clínica para toda a minha família.” </h5>
+                        </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="img/paciente_5.png">
+                        <h3> Gerson da Silva </h3>
+                        <h5> “No começo achei estranho, pois dizia oferecer preços acessíveis aos clientes, 
+                            mas descobri que eles se preocupam de fato com  pessoas de baixa renda.” </h5>
+                        </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="container">
+            <img src="img/svg/sobre_nos.svg"/>
+            <span class="text">
+                <h1> SOBRE NÓS</h1>
+                <h2> Tudo começou com 2 irmãos que moravam na cidade Tiradentes </h2>
+                <h5> Ambos se formaram em odontologia pela USP em dezembro de 1996, depois começaram 
+                    a trabalhar e juntar dinheiro para abrirem seu primeiro consultório, fato que 
+                    ocorreu 2 anos depois, em 27 de fevereiro de 2000, quando abriram a 1ª 
+                    Dentalbeauty na Cidade Tiradentes.</h5>
+            </span>
+        </div>
+        <div class="container">
+            <span class="text">
+                <h1> NOVAS CLÍNICAS</h1>
+                <h2> Depois de 3 anos atendendo na cT a 2ª clínica foi aberta em são Mateus </h2>
+                <h5> Após inaugurarmos a segunda Dentalbeauty não paramos por aí abrimos outra 
+                    em Sapopemba e mais duas na Cidade Tiradentes. Depois de muito sucesso 
+                    atuando na cidade de São Paulo conseguimos inaugurar mais uma em Santos, 
+                    no litoral paulista, resultando em 6 Dentalbeauty no estado de São Paulo.</h5>
+            </span>
+            <img src="img/svg/novas_clinicas.svg"/>
+        </div>
+    </section>
+    <section class="numbers">
+        <div class="container">
+            <div class="card">
+                <span>
+                    <h1> 22 </h1>
+                    <h3> anos de atuação</h3>
+                </span>
+            </div>
+            <div class="card" style="background-color: rgba(0,0,0,0.10);">
+                <span>
+                    <h1> 30 </h1>
+                    <h3> tipos de tratamento </h3>
+                </span>
+            </div>
+            <div class="card" style="background-color: rgba(0,0,0,0.20);">
+                <span>
+                    <h1> + 2.000 </h1>
+                    <h3> pacientes </h3>
+                </span>
+            </div>
+            <div class="card" style="background-color: rgba(0,0,0,0.30);">
+                <span>
+                    <h1> + 15 </h1>
+                    <h3> clínicas odontológicas </h3>
+                </span>
+            </div>
+        </div>
+    </section>
+    <section class="services" id="services">
+        <div class="container">
+            <h1> Serviços</h1>
+            <h2> Os mais populares</h2>
+            <ul>
+                <li>
+                    <div>
+                        <img src="img/svg/lente.svg"/>
+                        <h1> LENTES OU FACETAS DE PORCELANA</h1>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="img/svg/implante.svg"/>
+                        <h1> IMPLANTE DENTÁRIO </h1>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="img/svg/clareamento.svg"/>
+                        <h1> CLAREAMENTO DENTÁRIO</h1>
+                    </div>
+                </li>
+            </ul>
+            <h3> Temos 30 tipos de tratamentos dentários, agende um horário em 
+                <p></p>nossa clínica e escolha o que mais se encaixe com você.</h3>
+        </div>
+    </section>
+    <section class="plans" id="plans">
+        <div class="container">
+            <h1> planos </h1>
+            <h2> Escolha o melhor para você </h2>
+            <ul>
+                <li class="plan">
+                    <div class="content">
+                        <h3> Plano individual</h3>
+                        <h6> A escolha perfeita para aquele que mora sozinho e deseja um plano mais econômico. </h6>
+                        <label>
+                            <h4> R$ 19,99 </h4>
+                            <h5> / por mês </h5> 
+                        </label>
+                        <div class="list">
+                            <div class="list-item">
+                                <i class="fa-solid fa-circle-check"></i> 
+                                <h6> 7 Consultas ao Mês </h6>
+                            </div>
+                            <div class="list-item">
+                                <i class="fa-solid fa-circle-check"></i> 
+                                <h6> Lentes e Facetas de Porcelana </h6>
+                            </div>
+                            <div class="list-item">
+                                <i class="fa-solid fa-circle-check"></i> 
+                                <h6> Clareamento Dentário </h6>
+                            </div>
+                            <div class="list-item">
+                                <i class="fa-solid fa-circle-check"></i> 
+                                <h6> Implante Dentário </h6>
+                            </div>
+                            <div class="list-item">
+                                <i class="fa-solid fa-circle-check"></i> 
+                                <h6> Somente 1 pessoa incluída </h6>
+                            </div>
+                        </div>
+                        <div class="button">
+                            <button class="stroke" type="button"> Assinar </button>
+                        </div>
+                    </div>
+                </li>
+                <li class="family-plan">
+                    <div class="content">
+                        <h3> Plano Família</h3>
+                        <h6> A escolha perfeita para aquele que possui uma família grande e com até 6 integrantes. </h6>
+                        <label> 
+                            <h4> R$ 39,99 </h4> 
+                            <h5> / por mês </h5> 
+                        </label>
+                        <div class="list">
+                            <div class="list-item">
+                                <i class="fa-solid fa-circle-check"></i> <h6> 10 Consultas ao Mês </h6>
+                            </div>
+                            <div class="list-item">
+                                <i class="fa-solid fa-circle-check"></i> <h6> Lentes e Facetas de Porcelana </h6>
+                            </div>
+                            <div class="list-item">
+                                <i class="fa-solid fa-circle-check"></i> <h6> Clareamento Dentário </h6>
+                            </div>
+                            <div class="list-item">
+                                <i class="fa-solid fa-circle-check"></i> <h6> Implante Dentário </h6>
+                            </div>
+                            <div class="list-item">
+                                <i class="fa-solid fa-circle-check"></i> <h6> Até 6 pessoas incluídas </h6>
+                            </div>
+                        </div>
+                        <div class="button">
+                            <button class="background" type="button"> Assinar </button>
+                        </div>
+                    </div>
+                </li>
+                <li class="plan">
+                    <div class="content">
+                        <h3> Plano Enorme Família</h3>
+                        <h6> A escolha perfeita para aquele que possui uma família com mais de 8 integrantes. </h6>
+                        <label>
+                            <h4> R$ 54,99 </h4>
+                            <h5> / por mês </h5>
+                        </label>
+                        <div class="list">
+                            <div class="list-item">
+                                <i class="fa-solid fa-circle-check"></i> <h6> 15 Consultas ao Mês </h6>
+                            </div>
+                            <div class="list-item">
+                                <i class="fa-solid fa-circle-check"></i> <h6> Lentes e Facetas de Porcelana </h6>
+                            </div>
+                            <div class="list-item">
+                               <i class="fa-solid fa-circle-check"></i> <h6> Clareamento Dentário </h6>
+                            </div>
+                            <div class="list-item">
+                                <i class="fa-solid fa-circle-check"></i> <h6> Implante Dentário </h6>
+                            </div>
+                            <div class="list-item">
+                                <i class="fa-solid fa-circle-check"></i> <h6> Até 10 pessoas incluídas </h6>
+                            </div>
+                        </div>
+                        <div class="button">
+                            <button class="stroke" type="button"> Assinar </button>
+                        </div>
+                    </div>
+                </li>
+                <li class="plan">
+                    <div class="content">
+                        <h3> Plano Casal </h3>
+                        <h6> A escolha perfeita para aquele que possui uma família de até dois  integrantes. </h6>
+                        <label> 
+                            <h4> R$ 29,99 </h4> 
+                            <h5> / por mês </h5>
+                        </label>
+                        <div class="list">
+                            <div class="list-item">
+                                <i class="fa-solid fa-circle-check"></i> 
+                                <h6> 6 Consultas ao Mês </h6>
+                            </div>
+                            <div class="list-item">
+                                <i class="fa-solid fa-circle-check"></i> 
+                                <h6> Lentes e Facetas de Porcelana </h6>
+                            </div>
+                            <div class="list-item">
+                                <i class="fa-solid fa-circle-check"></i> 
+                                <h6> Clareamento Dentário </h6>
+                            </div>
+                            <div class="list-item">
+                                <i class="fa-solid fa-circle-check"></i> 
+                                <h6> Implante Dentário </h6>
+                            </div>
+                            <div class="list-item">
+                                <i class="fa-solid fa-circle-check"></i> 
+                                <h6> Até 2 pessoas incluídas </h6>
+                            </div>
+                        </div>
+                        <div class="button">
+                            <button class="stroke" type="button"> Assinar </button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="container">
+            <h1> contato </h1>
+            <h2> Envie uma mensagem</h2>
+            <form>
+                <div class="row">
+                    <div class="input-left">
+                        <label> Nome </label>
+                        <input type="text" id="name">
+                    </div>
+                    <div class="input-right">
+                        <label> Sobrenome </label>
+                        <input type="text" id="lastname">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-small">
+                        <label> Email </label>
+                        <input type="email" id="name">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-left">
+                        <label> Celular </label>
+                        <input type="text" id="phone">
+                    </div>
+                    <div class="input-right">
+                        <label> Assunto </label>
+                        <input type="text" id="assunt">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-large">
+                        <label> Mensagem </label>
+                        <input type="text" id="message">
+                    </div>
+                </div>
+                <div class="button">
+                    <button type="submit"> Enviar </button>
+                </div>  
+            </form>
+        </div>
+    </section>
+    <section class="teeth">
+        <img src="img/svg/dentes.svg"/>
+    </section>
+    <footer>
+        <div class="container">
+            <ul>
+                <label>
+                    <h4> Contato </h4>
+                    <h5> dentalbeauty@gmail.com</h5>
+                    <h4> Telefone</h4>
+                    <h5> (11) 2515-4541</h5>
+                </label>
+                <li>
+                    <h4> Navegação</h4>
+                    <a href="#patients">
+                        <h5> Pacientes </h5>
+                    </a>
+                    <a href="#about">
+                        <h5> Sobre nós </h5>
+                    </a>
+                    <a href="#services"> 
+                        <h5> Serviços </h5>
+                    </a>
+                    <a href="#plans"> 
+                        <h5> Planos </h5>
+                    </a>
+                    <a href="#contact"> 
+                        <h5> Contato </h5> 
+                    </a>
+                </li>
+                <li>
+                    <h4> Social </h4>
+                    <a>
+                        <h5> Facebook </h5>
+                    </a>
+                    <a>
+                        <h5> Instagram </h5>
+                    </a>
+                    <a> 
+                        <h5> Twitter </h5>
+                    </a>
+                    <a> 
+                        <h5> Youtube </h5>
+                    </a>
+                    <a> 
+                        <h5> Whatsapp </h5> 
+                    </a>
+                </li>
+                <li>
+                    <h4> Atualizações </h4>
+                    <h5> Receba as novidades de nossa clínica </h5>
+                    <form>
+                        <input name="email" type="email" placeholder="Seu email">
+                        <button> 
+                            <span class="material-symbols-outlined">
+                            send
+                            </span>
+                        </button>
+                    </form>
+                </li>
+            </ul>
+            <div class="copyright">
+                <img src="img/svg/logotipo_branco.svg"/>
+                <h4> © 2022 Dentalbeauty. Todos os direitos reservados. </h4>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

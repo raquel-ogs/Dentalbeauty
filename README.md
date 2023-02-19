@@ -1,2 +1,2 @@
-# Dentalbeauty
-Trabalho acadêmico de Landing Page de um Dentista feito com HTML, CSS e Jquery
+# Dentalbeauty - Projeto Pessoal
+Landing Page de uma Cliníca Dentária fictícia feito com HTML, CSS e Jquery.
